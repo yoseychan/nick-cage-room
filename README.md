@@ -1,4 +1,4 @@
-# nick
+# ihatenick
 
 ## Project setup
 ```
