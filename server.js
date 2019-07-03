@@ -7,8 +7,10 @@ server.on("connection", function(client) {
     
     client.on('message', function(resulted) {
         console.log(client + ': coordinates : ' + resulted);
-        
-        client.send(resulted);
+        server.clients.forEach(client => {
+            client.send(resulted);
+
+        });       
     })
 
     client.on("client", function() {
